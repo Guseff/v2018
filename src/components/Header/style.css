@@ -1,0 +1,21 @@
+.header-wrapper {
+  width: 100%;
+  background: #fbfdff;
+  border-bottom: 1px solid #ddeaff;
+}
+
+.header {
+  display: flex;
+  width: 1320px;
+  height: 96px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.header-menu-wrap {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 129px;
+}
