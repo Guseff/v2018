@@ -95,7 +95,7 @@ const Footer = () => (
           </button>
         </InfoBlock>
         {FOOTER_DATA.map((data, i) => (
-          <InfoBlock key={i} title={data.title}>
+          <InfoBlock key={i} title={data.title} narr={true}>
             <InfoList list={data.list} />
           </InfoBlock>
         ))}
@@ -103,8 +103,7 @@ const Footer = () => (
           <div className='footer-address'>
             Bitsgap Holding OÜ.<br />
             Registry code 14004763.<br />
-            Estonia, Tallinn Mõisa str 4,<br /> 
-            13522 
+            Estonia, Tallinn Mõisa str 4, 13522 
           </div>
         </InfoBlock>
       </div>
