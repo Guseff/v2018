@@ -26,7 +26,7 @@ const STEPS = [
 ];
 
 const GetStarting = (props) => (
-  <div className='.getting-wrapper'>
+  <div className='getting-wrapper'>
     <div className='getting'>
       <div className='getting-info'>
         <div className='getting-title'>
@@ -57,6 +57,7 @@ const GetStarting = (props) => (
       </div>
       <img alt='' src={img} className='getting-img' />
     </div>
+    <img alt='' src={img} className='getting-img--mobile' />
   </div>
 );
 

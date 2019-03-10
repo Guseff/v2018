@@ -19,8 +19,12 @@ const OptionBlock = (props) => (
           <div key={i} className={classNames('option-list-element',
                             {'option-list-element--active': elem.active}
                           )}>
-            <img alt='' src={elem.ico} />
-            <span>{elem.span}</span>  {elem.text}
+            <div className='option-element-top'>              
+              <img alt='' src={elem.ico} />
+              <div>
+                <span>{elem.span}</span> {elem.text}
+              </div>
+            </div>
           </div>
         ))}
         </div>

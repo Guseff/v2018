@@ -11,6 +11,8 @@
 
 .option-info {
   width: 539px;
+  display: flex;
+  flex-direction: column;
 }
 
 .option-title {
@@ -31,6 +33,9 @@
 
 .option-list {
   width: 538px;
+  order: 2;
+  display: flex;
+  flex-direction: column;
 }
 
 .option-list-element {
@@ -41,7 +46,7 @@
   color: #182873;
 }
 
-.option-list-element img {
+.option-element-top img {
   width: 38px;
   height: 38px;
   display: block;
@@ -71,14 +76,96 @@
 .option-button-wrap {
   padding-left: 25px;
   margin-top: 50px;
+  order: 3;
 }
 
 /* Styles for TABLET screens */
 @media (max-width: 1320px) and (min-width: 768px) {
-  
+  .option {
+    width: 688px;
+    margin: 80px auto;
+  } 
+  .option-info {
+    width: 688px;
+  }
+  .option-title, .option-text, .option-button-wrap {
+    padding-left: 0;
+  }
+  .option-list {
+    width: 708px;
+    height: 460px;
+    order: 4;
+    flex-direction: row;
+    overflow: hidden;
+    flex-wrap: wrap;
+  }
+  .option-list-element {
+    width: 284px;
+    height: 420px;
+    padding: 30px 25px 10px;
+    margin-right: 20px;
+    font-size: 19px;
+    line-height: 1.53;
+    color: #182873;
+    background-color: #f2f8ff;
+  }
+  .option-element-top {
+    display: flex;
+  }
+  .option-element-top img {
+    display: block;
+    margin-right: 20px;
+  }
+  .option-button-wrap {
+    margin: -10px 0 40px;
+  }
+  .option-img {
+    display: none;
+  }
 }
 
 /* Styles for MOBILE screens */
 @media (max-width: 767px) {
-  
+  .option {
+    width: 335px;
+    margin: 80px auto;
+  } 
+  .option-info {
+    width: 335px;
+  }
+  .option-title, .option-text, .option-button-wrap {
+    padding-left: 0;
+  }
+  .option-list {
+    width: 315px;
+    height: 460px;
+    order: 4;
+    flex-direction: row;
+    overflow: hidden;
+    flex-wrap: wrap;
+  }
+  .option-list-element {
+    width: 321px;
+    height: 420px;
+    padding: 30px 22px 10px;
+    /*margin-right: 20px;*/
+    font-size: 19px;
+    line-height: 1.53;
+    color: #182873;
+    background-color: #f2f8ff;
+  }
+  .option-element-top {
+    display: flex;
+  }
+  .option-element-top img {
+    width: 34px;
+    display: block;
+    margin-right: 20px;
+  }
+  .option-button-wrap {
+    margin: -10px 0 40px;
+  }
+  .option-img {
+    display: none;
+  }
 }
