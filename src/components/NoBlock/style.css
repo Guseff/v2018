@@ -36,3 +36,35 @@
   line-height: 1.47;
   text-align: center;
 }
+
+/* Styles for TABLET screens */
+@media (max-width: 1320px) and (min-width: 768px) {
+  .no-block {
+    width: 688px;
+    margin: 0 auto 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .no-block-elem {
+    width: 608px;
+    padding: 40px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Styles for MOBILE screens */
+@media (max-width: 767px) {
+  .no-block {
+    width: 335px;
+    margin: 0 auto 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .no-block-elem {
+    width: 265px;
+    padding: 40px 35px;
+    margin-bottom: 20px;
+  }
+}

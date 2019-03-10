@@ -90,10 +90,52 @@
 
 /* Styles for TABLET screens */
 @media (max-width: 1320px) and (min-width: 768px) {
-  
+  .getting {
+    width: 688px;
+    margin: 80px auto 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .getting-info {
+    width: 688px;
+  }
+  .getting-title {
+    width: 100%;
+    font-size: 25px;
+  }
+  .getting-list {
+    width: 688px;
+  }
+  .getting-img {
+    width: 688px;
+    height: 500px;
+    margin-top: 80px;
+    margin-bottom: 0;
+  }
 }
 
 /* Styles for MOBILE screens */
 @media (max-width: 767px) {
-  
+  .getting {
+    width: 335px;
+    margin: 80px auto 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .getting-info {
+    width: 335px;
+  }
+  .getting-title {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+  }
+  .getting-list {
+    width: 335px;
+  }
+  .getting-img {
+    width: 375px;
+    height: 320px;
+    margin-top: 80px;
+  }
 }
