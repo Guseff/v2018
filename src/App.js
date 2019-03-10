@@ -6,6 +6,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import ProductTour from './components/ProductTour';
 import OptionBlock from './components/OptionBlock';
+import NoBlock from './components/NoBlock';
+import GetStarting from './components/GetStarting';
 
 const OPTIONS = [
   {
@@ -82,6 +84,23 @@ const OPTIONS = [
   },
 ];
 
+const NO_BLOCK = [
+  {
+    img: require('./assets/images/shield-ic.svg'),
+    title: '0% trading fee',
+    text: 'There’s no extra commission for your trading orders.',
+  },
+  {
+    img: require('./assets/images/shield-ic.svg'),
+    title: 'No KYC required',
+    text: 'There’s no verification procedure, just connect your exchanges and start trading',
+  },
+  {
+    img: require('./assets/images/shield-ic.svg'),
+    title: 'Your funds are only yours',
+    text: 'Bitsgap doesn\'t have access to your funds, they always remain at the exchange.',
+  },
+];
 
 class App extends Component {
   render() {
@@ -92,6 +111,8 @@ class App extends Component {
           {OPTIONS.map((elem, i) => (
             <OptionBlock key={i} data={elem} />
           ))}
+          <NoBlock data={NO_BLOCK} />
+          <GetStarting />
           <Footer />
       </div>
     );
