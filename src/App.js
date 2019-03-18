@@ -18,17 +18,20 @@ const OPTIONS = [
     list: [
       {
         ico: require('./assets/images/coin-ic.svg'),
+        pic: require('./assets/images/trade-img-1-mobile.png'),
         span: 'Switch between 30+ crypto exchanges',
         text: 'and trade on over 10000 pairs within one simple interface',
         active: true,
       },
       {
         ico: require('./assets/images/star-ic.svg'),
+        pic: require('./assets/images/trade-img-2-mobile.png'),
         span: 'All your favorite pairs',
         text: 'with price change at the single glance',
       },
       {
         ico: require('./assets/images/umbrella-ic.svg'),
+        pic: require('./assets/images/trade-img-1-mobile.png'),
         span: 'Place smart orders and control your risks',
         text: 'with Stop Loss / Take Profit feature NEW',
       },
@@ -42,17 +45,20 @@ const OPTIONS = [
     list: [
       {
         ico: require('./assets/images/magic-ic.svg'),
+        pic: require('./assets/images/analyze-img-1-mobile.png'),
         span: 'No more manual trade entry and CSV files - ',
         text: 'Bitsgap automatically generates reports of your transactions and balance.',
         active: true,
       },
       {
         ico: require('./assets/images/track-ic.svg'),
+        pic: require('./assets/images/analyze-img-2-mobile.png'),
         span: 'Track your Profit/Loss statement',
         text: 'organized and carefree',
       },
       {
         ico: require('./assets/images/magnifier-ic.svg'),
+        pic: require('./assets/images/analyze-img-1-mobile.png'),
         span: 'Get a detailed one-page performance overview',
         text: 'for all your coins on all exchanges',
       },
@@ -66,17 +72,20 @@ const OPTIONS = [
     list: [
       {
         ico: require('./assets/images/cursor-ic.svg'),
+        pic: require('./assets/images/arbitrage-img-1-mobile.png'),
         span: 'Execute complicated orders',
         text: 'just with one click of the button',
         active: true,
       },
       {
         ico: require('./assets/images/coins-round-ic.svg'),
+        pic: require('./assets/images/arbitrage-img-1-mobile.png'),
         span: '',
         text: 'Available for all crypto-to-fiat exchanges',
       },
       {
         ico: require('./assets/images/filter-ic.svg'),
+        pic: require('./assets/images/arbitrage-img-1-mobile.png'),
         span: '',
         text: 'Smart filters, settings, and history',
       },

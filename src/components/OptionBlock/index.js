@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import ButtonLearn from '../ButtonLearn';
 
 import './style.css';
+import Caroussel from './Caroussel';
 
 const OptionBlock = (props) => (
   <div className={classNames('option', {'option--reverse': props.data.reverse})}>
@@ -14,20 +15,9 @@ const OptionBlock = (props) => (
       <div className="option-text">
         {props.data.text}
       </div>
-      <div className="option-list">
-        {props.data.list.map((elem, i) => (
-          <div key={i} className={classNames('option-list-element',
-                            {'option-list-element--active': elem.active}
-                          )}>
-            <div className='option-element-top'>              
-              <img alt='' src={elem.ico} />
-              <div>
-                <span>{elem.span}</span> {elem.text}
-              </div>
-            </div>
-          </div>
-        ))}
-        </div>
+      <div className={'caroussel'}>
+        <Caroussel list={props.data.list} />
+      </div>
       <div className="option-button-wrap">
         <ButtonLearn text='learn more' />
       </div>
