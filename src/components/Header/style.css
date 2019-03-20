@@ -10,6 +10,7 @@
   height: 96px;
   margin: 0 auto;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header-menu-wrap {
@@ -18,4 +19,22 @@
   justify-content: space-between;
   align-items: center;
   margin-left: 129px;
+}
+
+@media (max-width: 1320px) and (min-width: 768px) {
+  .header {
+    width: 688px;
+  }
+  .header-menu-wrap {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    width: 335px;
+  }
+  .header-menu-wrap {
+    display: none;
+  }
 }
